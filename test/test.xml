@@ -1,2 +1,10 @@
 <test>
-</test>    
+    <test-case id="HelloTest">
+        <random>
+            <q>привет</q>
+            <q>здарова</q>
+            <q>добрый день</q>
+        </random>
+        <a state="/Hello"/>
+    </test-case>
+</test>
