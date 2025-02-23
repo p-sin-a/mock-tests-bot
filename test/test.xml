@@ -8,12 +8,17 @@
     <!--    <a state="/Hello"/>-->
     <!--</test-case>-->
     
-    <test-case id="1">
-        <variants>
-            <q>привет</q>
-            <q>здарова</q>
-            <q>добрый день</q>
-        </variants>
+    <!--<test-case id="1">-->
+    <!--    <random>1,2</random>-->
+    <!--        <q>привет</q>-->
+    <!--        <q>здарова</q>-->
+    <!--        <q>добрый день</q>-->
+    <!--    <a state="/Hello"/>-->
+    <!--</test-case>-->
+    
+    <test-case>
+        <!-- Проверяем все варианты приветствий через regex -->
+        <q regex="true">^(привет|здарова|добрый день|хай|здравствуйте)$</q>
         <a state="/Hello"/>
     </test-case>
 </test>
